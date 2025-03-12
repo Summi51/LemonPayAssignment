@@ -3,6 +3,7 @@ const { connnection } = require("./db");
 require("dotenv").config();
 const cors = require("cors");
 const { userRouter } = require("./routes/userRoutes");
+const {taskRouter} = require("./routes/taskRoutes");
 
 const app = express();
 app.use(cors());
@@ -14,6 +15,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/users", userRouter); 
+
+app.use("/tasks", taskRouter);
 
 
 app.listen(process.env.PORT, async () => {
