@@ -59,7 +59,7 @@ userRouter.post("/login", async (req, res) => {
 
     const token = jwt.sign(
       { userID: user._id, exp: Math.floor(Date.now() / 1000) + 60 * 60 },
-      "bruce"
+      "taskwork"
     );
 
     res.status(200).json({ msg: "Login successful", token });

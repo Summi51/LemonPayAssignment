@@ -4,6 +4,7 @@ require("dotenv").config();
 const cors = require("cors");
 const { userRouter } = require("./routes/userRoutes");
 const {taskRouter} = require("./routes/taskRoutes");
+const { auth } = require("./middleware/auth");
 
 const app = express();
 app.use(cors());
@@ -16,6 +17,7 @@ app.get("/", (req, res) => {
 
 app.use("/users", userRouter); 
 
+app.use(auth); //middleware
 app.use("/tasks", taskRouter);
 
 
