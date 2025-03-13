@@ -34,7 +34,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:9000/users/register",
+        "https://lemon-pay-assignment.vercel.app/users/register",
         formData
       );
 

@@ -27,7 +27,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:9000/users/login",
+        "https://lemon-pay-assignment.vercel.app/users/login",
         formData
       );
       localStorage.setItem("token", response.data.token);

@@ -37,7 +37,7 @@ const TaskManagement = () => {
         return;
       }
 
-      const response = await axios.get("http://localhost:9000/tasks/", {
+      const response = await axios.get("https://lemon-pay-assignment.vercel.app/tasks/", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -54,7 +54,7 @@ const TaskManagement = () => {
       if (isEditMode) {
         // Update existing task
         await axios.patch(
-          `http://localhost:9000/tasks/update/${editTaskId}`,
+          `https://lemon-pay-assignment.vercel.app/tasks/update/${editTaskId}`,
           taskData,
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -64,7 +64,7 @@ const TaskManagement = () => {
         message.success("Task updated successfully!");
       } else {
         // Add new task
-        await axios.post("http://localhost:9000/tasks/add", taskData, {
+        await axios.post("https://lemon-pay-assignment.vercel.app/tasks/add", taskData, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -120,7 +120,7 @@ const TaskManagement = () => {
     if (action === "delete") {
       try {
         const token = localStorage.getItem("token");
-        await axios.delete(`http://localhost:9000/tasks/delete/${taskId}`, {
+        await axios.delete(`https://lemon-pay-assignment.vercel.app/tasks/delete/${taskId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
