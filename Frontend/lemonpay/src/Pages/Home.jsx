@@ -7,7 +7,7 @@
 
 // const Home = () => {
 //   const navigate = useNavigate();
-  
+
 //   return (
 //     <Main>
 //       <NavbarContainer>
@@ -61,9 +61,9 @@
 //   margin-top: 50px;
 
 //     @media (max-width: 768px) {
-//     width: 329px;  
+//     width: 329px;
 //     height: auto;
-//     margin: 20px auto; 
+//     margin: 20px auto;
 //   }
 // `;
 
@@ -82,7 +82,7 @@
 
 // const HomeContainer = styled.div`
 //   display: flex;
-//   flex-direction: column; 
+//   flex-direction: column;
 //   align-items: center;
 //   justify-content: center;
 //   height: 80vh;
@@ -114,7 +114,7 @@
 
 //   img {
 //     max-width: 646px;;
-//     height: auto;  
+//     height: auto;
 //   }
 
 //   @media (max-width: 768px) {
@@ -126,7 +126,7 @@
 
 // const ButtonContainer = styled.div`
 //   display: flex;
-//   gap: 50px; 
+//   gap: 50px;
 //   margin-top: 100px;
 //   justify-content: center;
 

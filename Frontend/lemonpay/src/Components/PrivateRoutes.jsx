@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Navigate } from "react-router-dom";
 import { message } from "antd";
@@ -15,4 +14,3 @@ const PrivateRoutes = ({ children }) => {
 };
 
 export default PrivateRoutes;
-

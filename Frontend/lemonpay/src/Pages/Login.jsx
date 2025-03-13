@@ -60,7 +60,7 @@ const Login = () => {
         <ButtonTask onClick={() => navigate("/task-manage")}>
           Task Page
         </ButtonTask>
-         
+
         <ButtonLogout onClick={handleLogout}>Logout</ButtonLogout>
 
         <HomeContainer>
@@ -430,7 +430,7 @@ const ButtonTask = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   align-items: center;
-  margin-left:20px;
+  margin-left: 20px;
   &:hover {
     background: #f0f0f0;
   }

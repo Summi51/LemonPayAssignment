@@ -7,7 +7,6 @@ import TaskManagement from "../Pages/TaskManagement";
 import PrivateRoutes from "./PrivateRoutes";
 import Logout from "../Pages/Logout";
 
-
 const AllRoutes = () => {
   return (
     <Routes>
@@ -15,16 +14,15 @@ const AllRoutes = () => {
       <Route path="/sign-up" element={<Register />} />
       <Route path="/" element={<Login />} />
       <Route path="/logout" element={<Logout />} />
-      <Route 
-        path="/task-manage" 
+      <Route
+        path="/task-manage"
         element={
           <PrivateRoutes>
             <TaskManagement />
           </PrivateRoutes>
-        } 
+        }
       />
     </Routes>
-
   );
 };
 

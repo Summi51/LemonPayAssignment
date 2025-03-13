@@ -193,7 +193,7 @@ const TaskManagement = () => {
         </tbody>
       </Table>
 
-      {/* Mobile View - Move it outside the table */}
+      {/* Mobile View */}
       {displayedTasks.length > 0 ? (
         displayedTasks.map((task) => (
           <MobileTaskCard key={task._id}>
