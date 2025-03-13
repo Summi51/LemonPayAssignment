@@ -9,7 +9,6 @@ import Ellipse_1 from "../images/Ellipse_1.png";
 import { message } from "antd";
 import axios from "axios";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
-import TaskManagement from "./TaskManagement";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -431,7 +430,7 @@ const ButtonTask = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   align-items: center;
-  gap:20px;
+  margin-left:20px;
   &:hover {
     background: #f0f0f0;
   }
