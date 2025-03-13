@@ -1,6 +1,6 @@
 # LemonPay Assignment
 
-This is a full-stack task management application built with **React.js / Next.js**, **Node.js / Express**, and **MongoDB**.
+This is a full-stack task management application built with **React.js**, **Node.js / Express**, and **MongoDB**.
 
 ## Features
 
