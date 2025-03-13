@@ -4,6 +4,9 @@ import Home from "../Pages/Home";
 import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import TaskManagement from "../Pages/TaskManagement";
+import PrivateRoutes from "./PrivateRoutes";
+import Logout from "../Pages/Logout";
+
 
 const AllRoutes = () => {
   return (
@@ -11,8 +14,17 @@ const AllRoutes = () => {
       {/* <Route path='/' element={<Home/>}/> */}
       <Route path="/sign-up" element={<Register />} />
       <Route path="/" element={<Login />} />
-      <Route path="/task-manage" element={<TaskManagement />} />
+      <Route path="/logout" element={<Logout />} />
+      <Route 
+        path="/task-manage" 
+        element={
+          <PrivateRoutes>
+            <TaskManagement />
+          </PrivateRoutes>
+        } 
+      />
     </Routes>
+
   );
 };
 

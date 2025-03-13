@@ -42,6 +42,14 @@ const Login = () => {
   };
 
   const [showPassword, setShowPassword] = useState(false);
+
+  // logout
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    message.success("Logged out successfully!", 2); // Message disappears in 2 seconds
+    navigate("/");
+  };
+
   return (
     <>
       <Main>
@@ -53,7 +61,8 @@ const Login = () => {
         <ButtonTask onClick={() => navigate("/task-manage")}>
           Task Page
         </ButtonTask>
-        <ButtonTask onClick={() => navigate("")}>Logout</ButtonTask>
+         
+        <ButtonLogout onClick={handleLogout}>Logout</ButtonLogout>
 
         <HomeContainer>
           <TextContainer>
@@ -422,10 +431,12 @@ const ButtonTask = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   align-items: center;
-
+  gap:20px;
   &:hover {
     background: #f0f0f0;
   }
 `;
+
+const ButtonLogout = styled(ButtonTask)``;
 
 export default Login;
