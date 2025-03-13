@@ -44,8 +44,7 @@ This is a full-stack task management application built with **React.js / Next.js
   "taskName": "string (required)",
   "description": "string (optional)",
   "dueDate": "Date (required)",
-  "createdAt": "Date (default: now)"
-}
+  "createdAt": "Date (default: now)" }
 
 ### **Live Links**
 * Backend: https://lemon-pay-assignment.vercel.app/
@@ -56,10 +55,10 @@ This is a full-stack task management application built with **React.js / Next.js
 ## Clone the Repository
 
 * git clone https://github.com/Summi51/LemonPayAssignment.git
-* cd LemonPayAssignment
+* cd lemonpay
 
 ### **Backend Setup**
-* cd backend
+* cd Backend
 * npm install
   
 ### Create a .env file and add:
@@ -71,12 +70,13 @@ This is a full-stack task management application built with **React.js / Next.js
 * npm start
 
 ### **Frontend Setup**
-* cd frontend
+* cd lemonpay
 * npm install
 * npm run server
 
-### **Screenshots**
-
+### **Screenshots** 
+## Desktop
+  
 * Signup Page : <img width="1428" alt="Screenshot 2025-03-13 at 10 29 57 PM" src="https://github.com/user-attachments/assets/fc7246dd-2160-40e0-8aa1-d2c8955b07bc" />
 * Login Page : <img width="1424" alt="Screenshot 2025-03-13 at 10 29 38 PM" src="https://github.com/user-attachments/assets/9fa835c0-1f9e-463a-a854-2e773b1fa5bd" />
 * Home Page (Tasks List) : <img width="1409" alt="Screenshot 2025-03-13 at 10 30 33 PM" src="https://github.com/user-attachments/assets/df60f6de-e22d-4ff3-8669-6e54d00e1e4f" />
@@ -84,6 +84,8 @@ This is a full-stack task management application built with **React.js / Next.js
 * Edit & Delete Task Modal : <img width="1418" alt="Screenshot 2025-03-13 at 10 31 13 PM" src="https://github.com/user-attachments/assets/a6da932a-270c-4f5b-ba5f-bee7739b09de" />
 * Edit Task Page : <img width="1416" alt="Screenshot 2025-03-13 at 10 31 32 PM" src="https://github.com/user-attachments/assets/bbeea8d4-fbec-4775-b0f0-42e1cc49b3ec" />
 
+
+## Mobile
 
 
 
