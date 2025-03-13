@@ -26,29 +26,29 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     if (formData.password.length < 8) {
       message.error("Password must be at least 8 characters long!");
       return;
     }
-  
+
     try {
       const response = await axios.post(
         "http://localhost:9000/users/register",
         formData
       );
-  
+
       message.success(response.data.msg || "Registration successful!");
-  
+
       console.log(response);
-  
+
       setFormData({ email: "", password: "" });
       navigate("/");
     } catch (error) {
       message.error(error.response?.data?.msg || "Registration failed!");
     }
   };
-  
+
   return (
     <>
       <Main>
@@ -113,7 +113,7 @@ const Register = () => {
                 </CheckboxContainer>
 
                 <SignInButton type="submit">Sign Up</SignInButton>
-                <LoginPage>
+                <LoginPage href="/">
                   {msg && <p className="message">{msg}</p>}
                   Already have an account?{" "}
                   <StyledLink to="/">Login here</StyledLink>
@@ -234,7 +234,7 @@ const Text_3 = styled.div`
   }
 `;
 
-const LoginPage = styled.div`
+const LoginPage = styled.a`
   height: 21px;
   top: 539px;
   color: #ffffff;
