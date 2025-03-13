@@ -24,6 +24,10 @@ userRouter.post("/register", async (req, res) => {
       return res.status(400).json({ msg: "Email and password are required" });
     }
 
+    if (password.length < 8) {
+      return res.status(400).json({ msg: "Password must be at least 8 characters long" });
+    }
+
     const existingUser = await UserModel.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ msg: "User already exists" });
@@ -41,6 +45,7 @@ userRouter.post("/register", async (req, res) => {
     res.status(500).json({ msg: error.message });
   }
 });
+
 
 // Login User
 userRouter.post("/login", async (req, res) => {
