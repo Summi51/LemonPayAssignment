@@ -75,6 +75,7 @@ This is a full-stack task management application built with **React.js**, **Node
 * npm run server
 
 ### **Screenshots** 
+
 ## Desktop
   
 * Signup Page : <img width="1428" alt="Screenshot 2025-03-13 at 10 29 57 PM" src="https://github.com/user-attachments/assets/fc7246dd-2160-40e0-8aa1-d2c8955b07bc" />
@@ -87,8 +88,12 @@ This is a full-stack task management application built with **React.js**, **Node
 
 ## Mobile
 
-
-
+* Signup Page : <img width="297" alt="Screenshot 2025-03-13 at 11 12 29 PM" src="https://github.com/user-attachments/assets/5443a73f-6473-4518-9fd6-0f8533ceb4df" />
+* Login Page : <img width="299" alt="Screenshot 2025-03-13 at 11 12 50 PM" src="https://github.com/user-attachments/assets/aa1eaf80-9580-4c55-a233-891341e15540" />
+* Home Page (Tasks List) : <img width="294" alt="Screenshot 2025-03-13 at 11 13 33 PM" src="https://github.com/user-attachments/assets/cab0f196-01f8-44b4-97e4-2c12be097ce0" />
+* Add Task Modal : <img width="297" alt="Screenshot 2025-03-13 at 11 14 28 PM" src="https://github.com/user-attachments/assets/d5cf0abd-5456-4b0a-8e7e-48d27c09d1e8" />
+* Edit & Delete Task Modal : <img width="290" alt="Screenshot 2025-03-13 at 11 14 15 PM" src="https://github.com/user-attachments/assets/9b70107d-4fe9-4132-bda6-54e9f367c83b" />
+* Edit Task Page : <img width="297" alt="Screenshot 2025-03-13 at 11 14 28 PM" src="https://github.com/user-attachments/assets/e3a46aef-f30d-47f7-b7a1-39fc3aa4c68f" />
 
 
 
